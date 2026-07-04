@@ -1,3 +1,11 @@
+INTEGRANTES 
+ Taller 3 - Gestión de datos
+## Integrantes:
+Anastasia Minina
+Cristhian Burbano
+Denis Chancay
+Erick Figueroa
+
 # taller-calidad-datosGestionDatosG3
 Maestria Analítica de datos taller-calidad-datos
 
