@@ -16,6 +16,6 @@ Coerción Numérica: Se utilizó pd.to_numeric(errors='coerce') para forzar la c
 
 Imputación sobre Eliminación: Dado el volumen de pérdida potencial, se descartó la eliminación de filas/columnas. Los valores faltantes se trataron mediante imputación. Para variables transaccionales se utilizó el relleno secuencial (.bfill()), y para variables numéricas generales se aplicó SimpleImputer utilizando la mediana, garantizando resistencia ante los valores atípicos.
 
-Escalado Robusto: Para el tratamiento de las variables numéricas, se evaluaron técnicas como MinMaxScaler y RobustScaler. Se seleccionó esta última debido a su capacidad para escalar los datos utilizando el rango intercuartílico, mitigando el impacto de tickets de compra anormalmente altos.
+Escalado Robusto: Para el tratamiento de las variables numéricas, se evaluaron técnicas como MinMaxScaler y RobustScaler. Se seleccionó esta última debido a su capacidad para escalar los datos utilizando el rango intercuartílico.
 
 Validación Declarativa: Finalmente, el proceso se blindó mediante la definición de un esquema de validación con pandera, comprobando de forma automatizada que el dataset resultante cumple con restricciones de negocio lógicas (ej. tipos de datos correctos y valores mayores a cero).
