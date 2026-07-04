@@ -22,9 +22,9 @@ Escalado Robusto: Para el tratamiento de las variables numéricas, se evaluaron 
 Validación Declarativa: Finalmente, el proceso se blindó mediante la definición de un esquema de validación con pandera, comprobando de forma automatizada que el dataset resultante cumple con restricciones de negocio lógicas (ej. tipos de datos correctos y valores mayores a cero).
 
 
-#Concluciones
+# Concluciones
 La auditoría de calidad demostró que operar sobre un dataset sin perfilado previo conduce invariablemente a errores analíticos graves, ya que simples inconsistencias de texto (como "ERROR" en campos numéricos) rompen los cálculos agregados. Además, se evidenció empíricamente que métodos agresivos de limpieza como la eliminación de nulos diezman la representatividad de la base de datos con pérdidas superiores al 50%, haciendo de la imputación estructurada y del uso de transformadores robustos como RobustScaler y PowerTransformer, herramientas indispensables para retener el volumen y corregir el comportamiento atípico de las ventas. Finalmente, la integración de "contratos de datos" con herramientas como pandera representa un cambio de paradigma necesario, pasando de revisiones visuales a validaciones automatizadas que evitan futuras regresiones en la calidad.
 
-#Recomendaciones
+# Recomendaciones
 A partir de esta práctica con el dataset de ejemplo, la principal recomendación es adoptar siempre esta metodología paso a paso antes de analizar cualquier conjunto de datos real. Hemos comprobado que la limpieza no debe hacerse de forma improvisada; es vital iniciar siempre con un diagnóstico visual y estadístico para entender los errores. Además, se sugiere evitar la eliminación masiva de datos usando técnicas de imputación en su lugar y utilizar siempre herramientas de validación como pandera para asegurar que el resultado final sea correcto. Este ejercicio demuestra que el éxito de cualquier análisis de datos o modelo predictivo futuro depende enteramente de la paciencia, el orden y el rigor con los que preparemos la información en esta etapa inicial.
 
